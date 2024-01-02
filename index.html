@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="weather-bg position-relative">
+        <div class="over-lay position-absolute w-100 h-100">
+            <div class="container py-5">
+                <input type="text" class="form-control my-5 rounded-pill" placeholder="Find your location..." id="searchInput">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="item rounded-2">
+                            <div class="heading d-flex justify-content-between bg-black rounded-2 p-2">
+                                <h6 class="today text-white text-capitalize"></h6>
+                                <h6 class="today-date text-white text-capitalize"></h6>
+                            </div>
+                            <div class="body py-3 px-2">
+                                <h4 class="text-muted location text-capitalize fs-3"></h4>
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="fw-bold degree">
+                                        <span></span><sup>o</sup>C
+                                    </h2>
+                                    <img src="" alt="img" class="w-25 icon">
+                                </div>
+                                <h6 class="text-primary weather-mood"></h6>
+                            </div>
+                            <div class="footer p-3">
+                                <span class="me-4">
+                                  <img src="images/foot1.png" alt="img">
+                                  20%
+                                </span>
+                                <span class="me-4">
+                                  <img src="images/foot2.png" alt="img">
+                                  18km/h
+                                </span>
+                                <span class="me-4">
+                                  <img src="images/foot3.png" alt="img">
+                                  East
+                                </span>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item rounded-2">
+                            <div class="heading text-center bg-black rounded-2 p-2">
+                                <h6 class="text-white text-capitalize tomorow"></h6>
+                            </div>
+                            <div class="body py-3 px-2 text-center">
+                                <img src="" alt="img" class="w-25 tommorow-icon">
+                                <h2 class="fw-bold tommorow-degree">
+                                    <span></span><sup>o</sup>C
+                                </h2>
+                                <h5 class="tommorow-min-degree">
+                                    <span></span><sup>o</sup>C
+                                </h5>
+                                <h6 class="text-primary tomm-weather-mood py-3"></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item rounded-2">
+                            <div class="heading text-center bg-black rounded-2 p-2">
+                                <h6 class="text-white third-day"></h6>
+                            </div>
+                            <div class="body py-3 px-2 text-center">
+                                <img src="" alt="img" class="w-25 after-tommorow-icon">
+                                <h2 class="fw-bold after-tommorow-degree">
+                                    <span></span><sup>o</sup>C
+                                </h2>
+                                <h5 class=" after-tommorow-min-degree">
+                                    <span></span><sup>o</sup>C
+                                </h5>
+                                <h6 class="text-primary after-tomm-weather-mood py-3"></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <script src="js/bootstrap.bundle.min.js"></script> 
+   <script src="js/main.js"></script> 
+</body>
+</html>
